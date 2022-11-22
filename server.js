@@ -1,3 +1,4 @@
+//Requiring the routes neccessary to process application and Express
 const express = require('express');
 const htmlRoutes = require('./routes/htmlRoutes')
 const apiRoutes = require('./routes/apiRoutes')
@@ -5,19 +6,15 @@ const apiRoutes = require('./routes/apiRoutes')
 const PORT = 3001;
 const app = express();
 
-// app.get('/',(req, res) => {
-//     res.send(
-//         ''
-//     );
-// });
+// Use method to bring in the json files and static files for styling(css).
 app.use(express.json())
 app.use(express.static('public'))
-//sending my routes
+
+//sending my routes for api's and html elements too. 
 app.use('/', htmlRoutes);
 app.use('/', apiRoutes);
 
-
-
+//function to listen to port for the application along with a console log printing the port. 
 app.listen(PORT, function() {
     console.log('App is listening on PORT: ' + PORT)
 });

@@ -3,11 +3,13 @@ const db = require('../db/db.json')
 const fs = require('fs')
 const path = require('path')
 
+//
 App.get('/api/notes', function(req, res){
     // res.json(db);
     res.sendFile(path.join(__dirname, '../db/db.json'))
 })
 
+//
 App.post('/api/notes', function(req, res) {
     const notes = req.body
     db.push(notes)
