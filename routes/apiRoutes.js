@@ -17,5 +17,13 @@ App.post('/api/notes', function(req, res) {
     fs.writeFileSync('./db/db.json', JSON.stringify(db))
     res.sendFile(path.join(__dirname, '../db/db.json'))
 })
+// needed to update the body
+App.put('', function (req,res) {
+
+})
+// need to pull the informtion from the existing notes.
+App.get('', function(req, res) {
+    getElementbyId
+})
 
 module.exports = App; 
