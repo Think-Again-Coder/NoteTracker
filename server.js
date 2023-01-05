@@ -4,6 +4,7 @@ const htmlRoutes = require('./routes/htmlRoutes')
 const apiRoutes = require('./routes/apiRoutes')
 
 const PORT = 3001;
+// const port = process.env.PORT || 3001;
 const app = express();
 
 // Use method to bring in the json files and static files for styling(css).
