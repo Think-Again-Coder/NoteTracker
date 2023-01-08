@@ -29,5 +29,7 @@ This is a great tool for anybody who may need a digital notepad that can save no
 **Check out the deployed application:**
 ##
 [Note Taker Application](https://github.com/Think-Again-Coder/NoteTracker) <--- Click Here!
+
+Heroku link:  https://git.heroku.com/notes-for-taking.git
 ## 
 ## - John Lopez -
